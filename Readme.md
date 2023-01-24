@@ -105,7 +105,7 @@ Describing the Table.
 
 DESCRIBE deliveries;
 
-![Alt text](describe_deliveries.png)
+
 
 **3. Import data from CSV file 'IPL_matches.csv' attached in resources to `matches`.**
 
@@ -121,7 +121,7 @@ Right click on Table name -
 
 
 
-![Alt text](import_ipl.png)
+
 
 **4. Import data from CSV file ’IPL_Ball.csv’ attached in resources to ‘deliveries’**
 
@@ -130,14 +130,14 @@ Right click on Table name -
 1.Importing 'IPL_matches.csv'.
 2. Select import/export
 3. Give your file name
-![Alt text](import_ball.png)
+
 
 **5. Select the top 20 rows of the deliveries table.**
 
 
 SELECT * FROM deliveries
 LIMIT 20;
-![Alt text](limit20_deliveries.png)
+
 
 **6. Select the top 20 rows of the matches table.**
 
@@ -146,7 +146,6 @@ SELECT * FROM matches
 LIMIT 20;
 
 
-![Alt text](limit20_matches.png)
 
 **7. Fetch data of all the matches played on 2nd May 2013.**
 
@@ -162,7 +161,6 @@ WHERE date = '2013-05-02';
 SELECT * FROM matches
 WHERE result_margin > 100;
 
-![Alt text](resultmargin_100.png)
 
 **9. Fetch data of all the matches where the final scores of both teams are tied and order it in descending order of the date.**
 
@@ -171,7 +169,7 @@ SELECT * FROM matches
 WHERE result = 'tie'
 ORDER BY date DESC;
 
-![Alt text](tie_desc.png)
+
 
 **10. Get the count of cities that have hosted an IPL match.**
 
@@ -179,7 +177,6 @@ SELECT COUNT(DISTINCT city)
 FROM matches;
 
 
-![Alt text](count_city.png)
 
 **11. Get the count of venues that have hosted IPL matches.**
 
@@ -187,7 +184,6 @@ FROM matches;
 SELECT COUNT(DISTINCT venue)
 FROM matches;
 
-![Alt text](count_venue.png)
 
 
 
